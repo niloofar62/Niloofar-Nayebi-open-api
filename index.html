@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Explorer</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Art Explorer 🎨</h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <button onclick="fetchRandomArt()">Show Random Artworks</button>
+        <button onclick="showSearch()">Search for Art</button>
+    </nav>
+
+    <!-- Search Bar (Hidden Initially) -->
+    <div id="searchSection" style="display: none;">
+        <input type="text" id="searchInput" placeholder="Search for artwork...">
+        <button onclick="searchArt()">Search</button>
+    </div>
+
+    <!-- Art Display -->
+    <div id="artGallery"></div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
